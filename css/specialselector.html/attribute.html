@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{
+            border: 2px solid brown;
+            background-color: rgb(113, 187, 189);
+        }
+        input[type="email"]{
+            border: 2px solid brown;
+            background-color: aquamarine;
+        }
+        div[class~="highlite"]{
+            background-color: violet;
+        }
+        p[lang="en"]{ /*[attr value="value"]-exact or start with value*/
+            color: blue;
+        }
+        a[href^="https"]{
+            color: green;
+        }
+
+        img[src$="jpeg"]{
+            border: 2px dashed green;
+            width: 120px;
+        }
+
+        img[src$="jpeg"]{
+            border: 1px dashed red;
+            width: 100px;
+        }
+        a[href*="about"]{
+            font-weight: bolder;
+            width: 100px;
+            text-decoration:underline;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Attribute Selector</h2>
+    <input type="text" placeholder="your name" required><br><br>
+
+    <input type="email" placeholder="your email"><br><br>
+
+    <div class="box highlite">Highlited box</div>
+
+    <p lang="en">English paragraph</p>
+
+    <a href="https://example.com/login">login</a><br><br><br>
+
+    <img src="https://images.pexels.com/photos/31697781/pexels-photo-31697781.jpeg" alt="phto">
+    <img src="https://images.pexels.com/photos/33037724/pexels-photo-33037724.jpeg" alt="sample">
+    <img src="https://images.pexels.com/photos/31697781/pexels-photo-31697781.jpeg" alt="phto">
+    <img src="https://images.pexels.com/photos/33037724/pexels-photo-33037724.jpeg" alt="sample"><br>
+
+
+
+
+    <a href="https://example.com/about">about us</a>
+
+
+</body>
+</html>

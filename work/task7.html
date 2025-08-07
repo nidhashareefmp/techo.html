@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        :root{
+            --primary-color: #3498db;
+            --secondary-color: #ffffff;
+            --text-color: #333;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.pexels.com/photos/2088205/pexels-photo-2088205.jpeg');
+            background-size: cover;
+            background-position: center;   
+            background-repeat: no-repeat;  
+            height: 100vh; 
+            
+        }
+        .image{
+          
+             border-radius:55%;
+             border: 3px;
+             text-align: center;
+             margin: 0
+        }
+        .circle-image {
+  width: 150px;        
+  height: 150px;       
+  object-fit: cover;   
+  border-radius: 50%;  
+  border: 4px solid #eeebeb; 
+}
+        
+        h1 {
+            margin: 10px 0 5px;
+            color: #fff;
+            text-align: center;
+          }
+
+        h2 {
+            margin: 5px 0 40px;
+            color: #e0e0e0;
+            font-weight: 400;
+            text-align: center;
+         }
+        
+         .grid{
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+               gap: 20px;
+               max-width: 1000px;
+               margin: 0 auto;
+               padding: 20px;
+         }
+        
+        .easy{
+            color: rgb(56, 76, 90);
+        }
+        .box{
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid rgb(37, 33, 33);        }
+        
+        .box.blue{
+            background: var(--main-color);
+             color: var(--text-color);
+        }
+        .main {
+      background: #262424;
+      height: 10px;
+      border-radius: 10px;
+      margin: 8px;
+    }
+
+    .mainbar {
+      height: 100%;
+      background: #fbf7f7;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size:18px;
+      color: #666;
+      margin-top: 30px;
+    }
+        
+
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img class="circle-image" src="me.jpg" alt="profile" width="300px">
+        <h3>Hi,I am Nidha</h3>
+        <h5>Mern stack developer</h5></div><br><br>
+        <div>
+            <div class="grid">
+    <div class="box">
+        <h2 class="easy">Easy profile</h2>
+            <h3 class="boot">BOOTSTRAP3.33</h3>
+            <h6>HTML (HyperText Markup Language) is the standard language used to create and design webpages. It structures the content on the web by using elements and tags, such as for headings, for paragraphs for links, and  for images. HTML tells the web browser how to display text, images, links, and other media. HTML is not a programming language; it is a markup language used for formatting content on the internet.</h6>
+            </div>
+
+    
+    <div class="box blue">
+      <h3>Skills</h3>
+      <p>HTML/CSS</p>
+      <div class="main"><div class="mainbar" style="width: 90%"></div></div>
+      <p>React/Node j.s</p>
+      <div class="main"><div class="mainbar" style="width: 50%"></div></div>
+      <p>Bootstrap</p>
+      <div class="main"><div class="mainbar" style="width: 40%"></div></div>
+    </div>
+
+    <div class="box blue">
+      <h3>Education</h3>
+      <p><strong>Providence-Highschool</strong></p>
+      <p>Peekay CICS<br>2022 January – 2025 December</p>
+      <p>Graduate the Bachelor of degree in Computer Science at Calicut University</p>
+    </div>
+
+    <div class="box">
+      <h3>Languages</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>Calicut / Kerala</li>
+        <li>English / Malayalam</li>
+        <li>Arabic / Hindi</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Contact</h3>
+      <p>Moosariparambath (H)</p>
+      <p>📞+91 9400460060</p>
+      <p>📩 nidhashareef2004@gmail.com</p>
+    </div>
+
+    <div class="box blue">
+      <h3>Experiences</h3>
+      <p><strong>Website Development</strong></p>
+      <p>Techolas<br>2025 July – 2026 April</p>
+      <p>Ongoing in Mern stack developer</p>
+    </div>
+  </div>
+
+</div>
+<footer>
+    © 2025 nidhaghan
+  </footer>
+
+</div>
+        
+
+    
+</body>
+</html>

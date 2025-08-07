@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > h1{
+            color: rgb(7, 71, 87);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      
+        nav{
+            background-color: rgba(42, 208, 42, 0.677);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /*descendant*/
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.0em;
+            margin: 0 250px;
+            padding: 50px 0;
+        }
+        img[src$="jpeg"]{
+            border: 2px ;
+            width: 220px;
+        }
+        .content {
+           overflow: hidden;
+       }
+         /*descendant*/
+       .content img {
+      float: left;
+      width:250px;
+      height:180px;
+      margin-right: 10px;
+    }
+
+    .content p{
+      font-size: 1.1em;
+    }
+     
+        a[href*="wiki"]{
+            color: blue;
+
+        }          
+        /*general*/
+        img ~ p{
+            color: brown;
+            font-weight: bold;
+        }    
+    /*child*/
+         ul > li{
+            margin: 10px 0;
+        }
+      /*adjacent*/
+        img +p{
+        }
+       
+        .main h3{
+          color:darkolivegreen;
+        }
+
+        .main ol,
+        .main ul{
+              color: rgb(83, 79, 79);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sarah's Favorite Animal</h2>
+    <nav>
+    <a href="#">Home</a>
+    <a href="#">Fun Facts</a>
+  </nav>
+
+  <div class="content"><br>
+    <img src="https://images.pexels.com/photos/18369806/pexels-photo-18369806.jpeg" alt="Moose">
+    <p>
+      My name is Sarah, and my favorite animal is the moose.</p><p> They can be up to 6.5 feet tall and weight 1200 pounds.</p><p>Surprisingly, they're really good at swimming!</p>
+    </p><br>
+    <p>
+      If you want to learn more about the moose, check out 
+      <a href="a">its Wikipedia page</a>.
+    </p>
+  </div>
+
+  <div class="main">
+    <h3>Mooses are awesome beacuase...</h3>
+    <ol type="1">
+        <li>They can swim really well</li>
+        <li>They can make really funny noises</li>
+        <li>They can close their nostrils</li>
+    </div>
+    </ol>
+
+
+  <div class="main">
+    <h3>If i were a moose,i would...</h3>
+    <ul type="disc">
+        <li>Eat lots of lettuce</li>
+        <li>Carry little animals on my antiers</li>
+        <li>Swim to Alaska</li>
+
+    </ul>
+  </div>
+
+
+</body>
+</html>

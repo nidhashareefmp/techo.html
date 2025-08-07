@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarah's Favorite Animal</title>
+<style>
+    /* Descendant selector - styling nav links inside nav */
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px;
+        display: inline-block;
+    }
+
+    /* Child selector - only immediate h1 inside header */
+    header > h1 {
+        font-size: 2.5em;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    /* Adjacent sibling selector - style paragraph after image */
+    img + p {
+        max-width: 500px;
+        font-size: 1.1em;
+    }
+
+    /* General sibling selector - style all h2 after the image */
+    img ~ h2 {
+        color: #333;
+        margin-top: 30px;
+    }
+
+    /* General page styles */
+    body {
+        background-color: #aee0ed;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    nav {
+        background-color: #94b88d;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    nav a:hover {
+        background-color: #779b70;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+        float: left;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    ul, ol {
+        margin-left: 40px;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Sarah's Favorite Animal</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Fun Facts</a>
+</nav>
+
+<section>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Moose_superior.jpg/320px-Moose_superior.jpg" alt="Moose">
+    <p>My name is Sarah, and my favorite animal is the moose. They can be up to 6.5 feet tall and weigh 1200 pounds. Surprisingly, they're really good at swimming!</p>
+    <p>If you want to learn more about the moose, check out <a href="https://en.wikipedia.org/wiki/Moose">its Wikipedia page</a>.</p>
+
+    <h2>Moose are awesome because...</h2>
+    <ol>
+        <li>They can swim really well</li>
+        <li>They can make really funny noises</li>
+        <li>They can close their nostrils</li>
+    </ol>
+
+    <h2>If I were a moose, I would...</h2>
+    <ul>
+        <li>Eat lots of lettuce</li>
+        <li>Carry little animals on my antlers</li>
+        <li>Swim to Alaska</li>
+    </ul>
+</section>
+
+</body>
+</html>

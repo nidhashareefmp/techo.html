@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+      box-sizing: border-box;
+    }
+        body{
+            background-color: #5e5454;
+            margin: 0;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .grid-container {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: 1fr 2fr 1fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:
+                "header header header header"
+                "slidebar content-1 content-1 content-1"
+                "slidebar content-2 content-3 content-3"
+                "footer footer footer footer";
+    }
+         
+
+         .header, .slidebar, .content-1, .content-2, .content-3, .footer {
+            border-radius: 10px;
+             padding: 20px;
+            color: rgb(45, 43, 43);
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+    }
+        .header{
+            grid-area: header;
+            background-color: rgba(210, 62, 213, 0.445);
+            color: rgb(21, 20, 20);
+    
+
+        }
+        .slidebar {
+            grid-area: slidebar;
+            background-color: #96209cd1;
+            color: rgb(30, 29, 29);
+            
+        }
+
+        .content-1 {
+            grid-area: content-1;
+            background-color: #a41ca9;
+           
+        }
+        .content-2{
+            grid-area:content-2;
+            background-color: #9d039d;
+            color: rgb(34, 31, 31);
+            
+        }
+        .content-3{
+            grid-area: content-3;
+            background-color: #a90abb;
+            color: rgb(23, 22, 22);
+            
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #690e63;
+            color: rgb(19, 18, 18);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">header</div>
+        <div class="slidebar">slidebar</div>
+        <div class="content-1">content-1</div>
+        <div class="content-2">content-2</div>
+        <div class="content-3">content-3</div>
+        <div class="footer">footer</div>
+
+
+    </div>
+    
+</body>
+</html>

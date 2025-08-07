@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: first baseline;
+            font-size: medium;
+            background-color: whitesmoke;
+            display: half;
+        }
+        nav ul{
+            display:flex ;
+            justify-content: baseline;
+            position: absolute;
+            left: 0%;
+            
+            
+        }
+        nav ul li{
+            margin-right: 30px;
+            
+        }
+        .full-bg {
+            width: 100%;
+            background-color: #f0f0f0;
+        }
+
+        nav{
+            background-color:rgb(41, 44, 62);
+            width: 1520px;
+            height: 60px;
+            padding-left: 100px;
+            position: fixed;
+            top: 0;
+            padding: 0%;
+        }
+        a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-heading {
+      margin-top: 120px;
+      margin-left: 1%;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      font-weight: 1;
+
+      text-align: left;
+      padding-left: 100px;
+    }
+    .sub-heading {
+        padding-left: 0px;
+        font-size: 15px;
+        margin-top: 0px;  
+        text-align: left;
+        padding-left: 100px;    
+        margin-bottom: 0;
+        color: #080808;        
+}
+input{
+    float: right;
+    margin-right: 30px;
+    padding: 10px 20px 10px 20px;
+
+}
+input:focus{
+    color: black;
+    background-color: white;
+    float:right;
+    
+
+}
+
+button{
+    color: black;
+    float: right;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    background-color:gray ;
+    color: green;
+    border-color: green;
+    border-style: double;
+}
+button:hover{
+    background-color: rgb(243, 243, 242);
+    color: black;
+}
+.learn{
+    color:white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+h1{
+    font:size 30px;
+    margin-top: 150px;
+    margin-left: 100px;
+    text-align: left ;
+}
+.main{
+        padding-left: 0px;
+        font-size: 15px;
+        width: 450px;
+        margin-top: 0px;  
+        text-align: left;
+        padding-left: 100px;    
+        margin-bottom: 0;
+        color: #080808;
+} 
+.para{
+      margin-top: 20px;
+      position: relative;
+      width: 500px;
+}  
+p{
+    text-align: left;    
+      width: fit-content;
+      margin-left: 0;       
+      position: absolute; 
+}
+.three-columns-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  padding-left: 18px;
+  text-align: left;
+}
+
+.column {
+  flex: 1;
+  padding: 50px;
+  border-radius: 8px;
+  gap: 50px;
+  text-align: left;
+  padding-left: 0px;
+  font-size: 15px;
+  margin-top: 0px;  
+  padding-left: 100px;    
+  margin-bottom: 0;
+}
+
+
+.column p {
+  text-align: left;
+  font-size: 15px;
+}
+h3{
+    font-size: x-large;
+    text-align: left;
+
+}
+
+.column1 , .column2 , .column3{
+    justify-content: left;
+    width: 380px;
+    height: 10px;
+    font-size: medium;
+    border-color: #080808;
+    margin-right: 10px;
+    position: relative ;
+    padding-right: 20px;
+
+}
+
+.View1 , .View2 , .View3{
+    color:white;
+    background-color: rgb(104, 104, 104);
+    border: none;
+    border-radius: 5px;
+    float: left;
+    margin-top: 150px;
+    margin-left: 9px;
+}
+div p{
+    color: brown;
+    background-color:beige ;
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul type="none">
+        <li> <a href="#">Navbar</a></li>
+        <li> <a href="#">home</a></li>
+        <li> <a href="#">Link</a></li>
+        <li> <a href="#">Disabled</a></li>
+        <li> <a href="#">Dropdown</a></li>
+        </ul>
+        <div class="button">
+                <button>Search</button>
+                 <input type="search" placeholder="Search">
+
+  </div>
+    </nav>
+    
+    
+    <center>
+        <div>
+    <h1 class="main-heading">Hello, World!</h1> 
+    <p class="sub-heading">This is a template of simple marketing or informational website.It includes a large callout called a jumboton and three supporting pieces of content. <br>
+        Use it as a starting point to create something more unique.</p>
+        <button class="learn">Learn more >> </button>
+            
+</div>
+    </h3> 
+
+<div class="three-columns-flex">
+  <div class="column1">
+    <h3>Heading</h3>
+    <p class="content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officia impedit sunt quaerat illo repellat nostrum, consequuntur tempore, nobis ea in cumque odit omnis eveniet. Dolor accusamus accusantium vitae nulla?</p>
+    <button class="View1">View more>></button>
+  </div>
+  <div class="column2">
+    <h3>Heading</h3>
+    <p class="conten">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officia impedit sunt quaerat illo repellat nostrum, consequuntur tempore, nobis ea in cumque odit omnis eveniet. Dolor accusamus accusantium vitae nulla?</p>
+        <button class="View2">View more>></button>
+
+  </div>
+  <div class="column3">
+    <h3>Heading</h3>
+    <p class="content3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officia impedit sunt quaerat illo repellat nostrum, consequuntur tempore, nobis ea in cumque odit omnis eveniet. Dolor accusamus accusantium vitae nulla?</p>
+        <button class="View3">View more>></button>
+
+  </div>
+</div>
+
+    </center>
+    
+    
+</body>
+</html>

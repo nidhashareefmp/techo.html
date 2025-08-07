@@ -1,0 +1,22 @@
+.content{
+    background-color: lightblue;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    .content{
+        background-color: orange;
+        font-size: 16px;
+    }
+}
+@media print{
+    .content{
+        background-color: blue;
+        color: wheat;
+        font-size: 12px;
+        border: 2px solid black; 
+    }
+
+}

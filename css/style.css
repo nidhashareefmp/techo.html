@@ -1,0 +1,15 @@
+:root{
+    --main-color:red;
+    --padding-size:20px;
+    --text-color:white;
+    
+}
+.box{
+    background-color:var(--main-color);
+    padding: var(--padding-size);
+    border: 1px dotted white;
+    color: var(--text-color);
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}

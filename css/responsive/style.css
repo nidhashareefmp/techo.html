@@ -1,0 +1,19 @@
+.respo-box{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width:480px){
+    .respo-box{
+        background-color:green;
+        font-size: 14px;
+
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .respo-box{
+        background-color:brown;
+        font-size: 18px;
+
+    }

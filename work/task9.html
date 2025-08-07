@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 500px;
+           background:beige;
+          margin: 0;
+        }
+        .loading{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .box {
+           width: 20px;
+           height: 20px;
+           background-color: #434648;
+           border-radius: 50%;
+           animation: bounce 0.6s infinite ease-in-out;
+    }
+
+    .box:nth-child(2){
+        background-color:gray ;
+        animation-delay: 0.2s;
+    }
+
+    .box:nth-child(3){
+               background-color: darkgray;
+               animation-delay: 0.4s;
+    }
+        @keyframes bounce{
+            0%, 100%{
+         Transform:translateY(0);}
+         50%{
+        Transform:translateY(-25px);}
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+    
+</body>
+</html>

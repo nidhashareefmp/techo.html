@@ -1,0 +1,15 @@
+nav {
+  background-color: aqua;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: white;
+}
+nav ul li a:hover {
+  color: red;
+}
