@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        background: white;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;   
+        padding: 10px 20px;       
+        border-bottom: 1px solid #ccc; 
+        gap: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #1d3b53;
+    }
+
+    nav button {
+        background-color: black;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    nav button:hover{
+        background-color:white;
+        color: black;
+        border-radius: 10px;
+        border-color:black ;
+    }
+          
+        header {
+            position: relative;
+            color: white;
+            height: 400px; 
+             overflow: hidden;
+           }
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.header-content{
+  position:relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  height: 100%;
+  padding-left: 60px;
+  max-width: 590px;
+  gap: 15px;
+}
+    .header-content h2{
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .header-content p{
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+    header button {
+            color: white;
+            background-color: #1d3b53;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    header button:hover {
+       background-color:white;
+       color: #1d3b53;
+   }
+
+   h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+   }
+   
+
+    section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .service h3 {
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: 768px){
+      .header-content h2 {
+        font-size: 1.5rem;
+      }
+      .header-content p {
+        font-size: 0.9rem;
+
+      }
+      nav ul {
+      gap: 20px;
+      }
+    }
+      @media (max-width: 480px) {
+       header {
+          padding: 20px 10px;
+         height: auto; 
+  }
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+    <ul>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Blog</a></li>
+      <button>CONTACT US</button>
+
+
+    </ul>
+    </nav>
+    <header>
+      <img src="https://images.pexels.com/photos/3709433/pexels-photo-3709433.jpeg" alt="background">
+      <div class="header-content">
+    <h2>Mobile and Web Apps Developed Right the First Time.</h2><br>
+    <p>We create beautiful iOS, Android, and web applications to fit your needs.</p>
+    <button>GET IN TOUCH</button>
+    </div>
+  </header><br>
+
+  <h2>Our Services</h2>
+  <section>
+    <div class="service">
+      <img src="mobile app.jpg" alt="Mobile App" width="90px" height="90px">
+      <h3>Mobile App Development</h3>
+    </div>
+    <div class="service">
+      <img src="design.jpg" alt="App Design" width="90px" height="90px">
+      <h3>App Design</h3>
+    </div>
+    <div class="service">
+      <img src="web development.jpg" alt="Web Development" width="90px" height="90px">
+      <h3>Web Development</h3>
+    </div>
+  </section>
+    
+</body>
+</html>
