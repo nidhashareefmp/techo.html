@@ -1,0 +1,27 @@
+.navbar {
+  background-color: black;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.navbar ul {
+  list-style: none;
+  gap: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navbar ul li {
+  display: inline-block;
+}
+.navbar ul li a {
+  color: yellow;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
